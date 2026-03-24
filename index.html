@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>𝗧𝗔𝗦𝗛𝗔𝗡 𝗪𝗜𝗡 𝗛𝗔𝗖𝗞</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1236545951526161');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1236545951526161&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #0d1b2a, #000);
+    color: white;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    padding: 30px;
+}
+
+/* Logo Image */
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Headings */
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.sub {
+    color: #00bfff;
+    letter-spacing: 2px;
+}
+
+/* Join Box */
+.join-box {
+    background: #111;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+/* Timer */
+.timer-text {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.timer {
+    font-size: 40px;
+    color: #ff4d4d;
+    margin: 10px 0;
+}
+
+/* Progress bar */
+.progress {
+    width: 80%;
+    max-width: 300px;
+    height: 6px;
+    background: #333;
+    border-radius: 5px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 100%;
+    background: #00bfff;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.primary {
+    background: linear-gradient(90deg, #1da1f2, #00c6ff);
+    color: white;
+}
+
+.secondary {
+    background: #222;
+    color: #aaa;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- IMAGE / LOGO -->
+    <img src="https://image2url.com/r2/default/images/1774158869677-0cb11302-7ca4-4cca-bac3-d4f3208cb1d8.jpg" class="logo">
+    <!-- 👆 yaha apna image link daal -->
+
+    <h1>𝗧𝗔𝗦𝗛𝗔𝗡 𝗪𝗜𝗡 𝗛𝗔𝗖𝗞</h1>
+    <p class="sub">OFFICIAL CHANNEL</p>
+
+    <div class="join-box">
+        Join 1,501+ others today
+    </div>
+
+    <p class="timer-text">Link expires in:</p>
+    <div class="timer" id="timer">30</div>
+
+    <!-- Progress -->
+    <div class="progress">
+        <div class="progress-bar" id="bar"></div>
+    </div>
+
+    <!-- BUTTON -->
+    <a href="https://t.me/+GZlyzjxVDBllYjVl" class="btn primary">
+        JOIN FREE ON TELEGRAM
+    </a>
+
+    <a href="https://t.me/+GZlyzjxVDBllYjVl" class="btn secondary">
+        Click Here for Instant Access
+    </a>
+
+</div>
+
+<script>
+let time = 60;
+let timerEl = document.getElementById("timer");
+let bar = document.getElementById("bar");
+
+let countdown = setInterval(() => {
+    time--;
+    timerEl.innerText = time;
+
+    let percent = (time / 60) * 100;
+    bar.style.width = percent + "%";
+
+    if (time <= 0) {
+        time = 60; // reset
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
