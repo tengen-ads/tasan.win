@@ -1,85 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Offer</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-    }
-    .container {
-      max-width: 500px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-    }
-    h1 {
-      color: #e60023;
-      font-size: 24px;
-    }
-    p {
-      font-size: 16px;
-      color: #333;
-    }
-    .cta-btn {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      background: #28a745;
-      color: white;
-      font-size: 18px;
-      border: none;
-      border-radius: 5px;
-      margin-top: 15px;
-      cursor: pointer;
-    }
-    .cta-btn:hover {
-      background: #218838;
-    }
-    .countdown {
-      color: red;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    input {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sameer Win99x</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top left, #1a1a1a, #000814 60%);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 420px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ffcc66;
+  text-shadow: 0 0 15px rgba(255,204,102,0.8);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #cfd8dc;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.online {
+  color: #00ff9c;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.online::before {
+  content: "🔴 ";
+  color: red;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.badge {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #ddd;
+  background: rgba(255,255,255,0.05);
+}
+
+.cta {
+  margin-top: 25px;
+}
+
+.join-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 40px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(90deg, #ffcc33, #ff9900);
+  box-shadow: 0 0 20px rgba(255,170,0,0.7);
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  transform: scale(1.03);
+}
+
+.secondary-btn {
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #00aaff;
+  color: #00c3ff;
+  box-shadow: 0 0 15px rgba(0,170,255,0.6);
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
-  <h1>🎁 Limited Time Offer!</h1>
-  <p>Get your exclusive deal now before it expires.</p>
 
-  <img src="https://via.placeholder.com/400x250" width="100%" />
+  <h1>SAMEER WIN99X</h1>
 
-  <div class="countdown" id="timer">Offer ends in: 05:00</div>
+  <div class="subtitle">
+    Daily Live Sureshots<br>
+    Premium Telegram Trading Signals
+  </div>
 
-  <input type="text" placeholder="Enter your name">
-  <input type="tel" placeholder="Enter your phone number">
+  <div class="online">438 users online now</div>
 
-  <button class="cta-btn">Claim Now</button>
+  <div class="badges">
+    <div class="badge">✔ Verified</div>
+    <div class="badge">🔥 High Accuracy</div>
+    <div class="badge">⚡ Fast Updates</div>
+    <div class="badge">🛡 Trusted</div>
+  </div>
+
+  <div class="cta">
+    <button class="join-btn" onclick="joinTelegram()">🚀 JOIN TELEGRAM</button>
+    <button class="secondary-btn">📢 Ads / Promotion Setup</button>
+  </div>
+
+  <div class="footer">
+    © 2025 @DEAD_KRISH ADS TG - All rights reserved
+  </div>
+
 </div>
 
 <script>
-  let time = 300;
-  let timer = document.getElementById("timer");
-
-  setInterval(() => {
-    let min = Math.floor(time / 60);
-    let sec = time % 60;
-    timer.innerHTML = `Offer ends in: ${min}:${sec < 10 ? '0'+sec : sec}`;
-    if(time > 0) time--;
-  }, 1000);
+function joinTelegram() {
+  window.location.href = "https://t.me/yourchannel"; // apna link daal
+}
 </script>
 
 </body>
